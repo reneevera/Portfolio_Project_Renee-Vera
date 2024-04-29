@@ -1,0 +1,50 @@
+<h1><%= message %></h1>
+
+<!-- index.ejs -->
+<!-- Renee Vera Student # 301345205 10/03/2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- Welcome Modal -->
+    <!-- This is the modal that will show the welcome message -->
+    <p class="card-text">With over 25 years of experience cultivating innovation in the information technology sector, I bring a wealth of expertise in strategic planning and technology project management. I am passionate about driving innovation processes and have a proven track record of leading technology across various industries.</p>
+
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomeModalLabel">Welcome to My Portfolio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A little more about me.
+                </div>
+                <div class="modal-footer">
+                    <!-- Button that redirects to the About Me page -->
+                    <!-- Clicking this button will redirect the user to the 'About Me' page -->
+                    <a href="/about" class="btn btn-primary">
+                        Learn More About Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Including Bootstrap JS for additional functionalities like modals and tooltips -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script to automatically open the modal when the page loads -->
+    <script>
+        window.onload = function() {
+            var myModal = new bootstrap.Modal(document.getElementById('welcomeModal'), {});
+            myModal.show();
+        };
+    </script>
+    <%- include('footer') %>
+</body>
+</html>
+

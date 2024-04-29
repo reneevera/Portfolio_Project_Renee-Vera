@@ -1,0 +1,38 @@
+<h1></h1>
+<!-- about.ejs -->
+<!-- Renee Vera Student # 301345205 10/03/2023-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- About Me Card -->
+        <!-- This card will display your name, image, a short paragraph about you, and a link to your resume -->
+        <div class="card mx-auto" style="width: 18rem;">
+            <img src="/images/aboutme.png" class="card-img-top" alt="Your Image">
+            <div class="card-body">
+                <h5 class="card-title">Renee Vera</h5>
+                <p class="card-text">
+                    I am passionate about utilizing technology to solve complex problems and deliver innovative solutions that contribute to organizational growth and efficiency. I invite you to explore my LinkedIn profile to learn more about my professional background, accomplishments, and the value I bring to every project. Let's connect and explore how we can collaborate for mutual success
+                </p>
+                <!-- Resume Link -->
+                <!-- This button links to the PDF version of your resume -->
+                <a href="/files/resume.pdf" class="btn btn-primary" target="_blank">
+                    View My Resume
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Including Bootstrap JS for additional functionalities like modals and tooltips -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Footer -->
+    <%- include('footer') %>
+</body>
+</html>
+

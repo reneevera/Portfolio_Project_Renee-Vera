@@ -1,0 +1,61 @@
+<h1>Contact Me</h1>
+<!-- Renee Vera Student # 301345205 10/03/2023-->
+<!-- contact.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Contact Information Card -->
+        <!-- This card will display your contact information -->
+        <div class="card mb-4 mx-auto" style="width: 18rem;">
+            <div class="card-header">
+                Contact Information ..........
+            </div>
+            <ul class="list-group list-group-flush">
+                <!-- Email Address -->
+                <li class="list-group-item">Email: renee_vera@excelcallsa.com</li>
+                <!-- Phone Number -->
+                <li class="list-group-item">Phone: (123) 456-7890</li>
+                <!-- LinkedIn Profile -->
+                <li class="list-group-item">
+                    LinkedIn: <a href="https://www.linkedin.com/in/reneevera/" target="_blank">Your LinkedIn Profile</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <!-- This form allows users to send you a message and provide basic contact information -->
+        <form action="/" method="post" class="mx-auto" style="width: 18rem;">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+            <div class="mb-3">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contactNumber" name="contactNumber" required>
+            </div>
+            <div class="mb-3">
+                <label for="emailAddress" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="emailAddress" name="emailAddress" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+    <!-- Including Bootstrap JS for additional functionalities like modals and tooltips -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
